@@ -1,26 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Hi , welcome in blog project</h1>
+  <blog-button title="Go there" background="crimson" color="#fff" />
+  <blog-button title="Go there" link="/blog" fullWidth />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import BlogButton from "./components/BlogButton.vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { BlogButton },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
